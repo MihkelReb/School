@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+                            //Harjoitus 1
+//harjoitellaan olion luomista ja käyttämistä
+
+let olioYksi = {
+  tyyppi : "auto",
+  väri: "vihreä",
+  merkki: "volvo",
+  ika: 5,
+  
+  annaMaxNopeus: function(){return 200-10*this.ika}
+  
+}
+
+//Olioa voi muokata suoraan
+//olioYksi.tyyppi = "kiraffi"
+
+//Testataan oliota
+console.log(olioYksi.tyyppi)
+console.log(olioYksi.annaMaxNopeus())
+ */
+/*
+                            //Harjoitus 2
+   function lemmikki(type, breed, age, color, lifeSpan) {
+  this.petType = type;
+  this.breed = breed;
+  this.age = age;
+  this.furColor = color;
+  this.elinIka = lifeSpan;
+}
+
+const myPet = new lemmikki("koira", "koultainen noutaja", 3, "keltainen", 13);
+const myPet2 = new lemmikki("hamsteri", "--", 1, "musta", 5);
+const friendsPet = new lemmikki("kissa", "--", 2, "valko/musta", 8);
+
+console.log(myPet)
+console.log(myPet2)
+console.log(friendsPet) */
+
+
+/* 
+                            //Harjoitus 3
+//luodaan hedelmän oliot
+
+function hedelmä(nimi, hinta, alkuperamaa, paino) {
+  this.hedelmäNimi = nimi;
+  this.hedelmäHinta = hinta;
+  this.hedelmäAlkuperamaa = alkuperamaa;
+  //this.hedelmäPaino = paino;
+}
+
+const hedelmä1 = new hedelmä("Mansikka", 17, "suomi");
+const hedelmä2 = new hedelmä("Banaani", 2.48, "Costa Rica");
+const hedelmä3 = new hedelmä("Sitruuna", 3.09, "Espanja");
+const hedelmä4 = new hedelmä("Omena", 2.79, "Italia");
+const hedelmä5 = new hedelmä("Vesimeloni", 2.99, "Espanja");
+
+
+//funktio joka näyttää paljon hedelmakori maksaa
+let kori = 0;
+
+const hedelmät = [hedelmä1, hedelmä2, hedelmä3, hedelmä4, hedelmä5];
+
+for (let i = 0; i < hedelmät.length; i++) {
+  kori += hedelmät[i].hedelmäHinta;
+}
+
+console.log("Hedelmäkori maksaa:", kori);
+ */
+//luodaan hedelmän oliot
+
+function hedelmä(nimi, hinta, alkuperamaa, paino) {
+  this.hedelmäNimi = nimi;
+  this.hedelmäHinta = hinta;
+  this.hedelmäAlkuperamaa = alkuperamaa;
+  this.hedelmäPaino = paino;
+}
+
+const Mansikka = new hedelmä("Mansikka", 17, "suomi", 0.5);
+const Banaani = new hedelmä("Banaani", 2.48, "Costa Rica", 0.5);
+const Sitruuna = new hedelmä("Sitruuna", 3.09, "Espanja", 0.5);
+const Omena = new hedelmä("Omena", 2.79, "Italia", 0.5);
+const Vesimeloni = new hedelmä("Vesimeloni", 2.99, "Espanja", 0.5);
+
+
+//funktio joka näyttää paljon hedelmakori maksaa
+let koriSumma = 0;
+
+const kori = [Mansikka, Banaani, Sitruuna, Omena, Vesimeloni];
+
+for (let i = 0; i < kori.length; i++) {
+  koriSumma += kori[i].hedelmäHinta;
+}
+
+console.log("hedelmäkori maksaa:", koriSumma);
+console.log("Mansikkan hinta : ", Mansikka.hedelmäHinta * Mansikka.hedelmäPaino, "Paino : ", Mansikka.hedelmäPaino, " Kg hinta : ", Mansikka.hedelmäHintä, "€/Kg");
+
+
+
+
+
+//let hedelmä1.paino = prompt("Kuinka paljon mansikat painavat?");
+//"Paino : ", Mansikka.hedelmäPaino" Kg hinta : ", Mansikka.hedelmäHintä);
+//" (Mansikka.hedelmäHinta*Mansikka.hedelmäPaino) "
+//" (Mansikka.hedelmäPaino) " Kg hinta : " (Mansikka.hedelmäHintä)
+/*
+                        //Harjoitus 4
+
+*/
+    </script>
+</body>
+</html>
+

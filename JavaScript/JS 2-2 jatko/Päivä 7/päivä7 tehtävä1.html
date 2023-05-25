@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sortSalaryHL()">Sort from high to low</button>
+    <button onclick="sortSalaryLH()">Sort from low to high</button>
+    <p id="palkat"></p>
+    <script>
+
+        let palkat = [15000, 4000, 500, 250, 20000, 11111];
+        document.getElementById("palkat").innerHTML = palkat;
+
+        function sortSalaryHL() {
+            palkat.sort(function(b, a){return a - b});
+            document.getElementById("palkat").innerHTML = palkat;
+        }
+
+        function sortSalaryLH(){
+            palkat.sort(function(a, b){return a - b});
+            document.getElementById("palkat").innerHTML = palkat;
+        }
+
+        
+/*         palkat.sort();
+        console.log(palkat);
+
+        palkat.reverse();
+        console.log(palkat); */
+
+    </script>
+</body>
+</html>

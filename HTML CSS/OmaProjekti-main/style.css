@@ -1,0 +1,98 @@
+body {
+  font-size: large;
+  background-color: rgb(24, 19, 14);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(124, 96, 62);
+}
+
+.banner {
+  width: 100%;
+  height: 205px;
+  background-image: url(banner.png);
+  background-position: center;
+}
+
+a, a:visited, a:active, a:hover, a:link{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: crimson;
+}
+
+h1, h2, h3 {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(177, 137, 88);
+}
+
+.navlinks {
+  background-color: #9b9b9b8a;
+  border: 0px solid black;
+  width: fit-content;
+  padding: 5px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.jumpto {
+  position: fixed;
+  top: 30%;
+}
+
+.Contents {
+  padding: 5px;
+  text-align: left;
+}
+
+.jumpto, .Contents {
+  color: beige;
+  background-color: #9b9b9b8a;
+  width: fit-content;
+  height: auto;
+  border-radius: 25px;
+  font-style: italic;
+}
+
+.kuvat {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  transition: transform 0.25s ease;
+}
+
+.kuvat:hover {
+  transform:scale(1.1);
+}
+
+.lista {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.tehtavat, h1, h2, h3, h4, .jumpto {
+  text-align: center;
+}
+
+fieldset {
+  background-color: rgba(240, 248, 255, 0.808);
+  width: 550px;
+  min-width: 550px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.palaute {
+  width: 550px;
+  max-width: 545px;
+  min-height: 100px;
+  resize: vertical;
+  overflow: visible;
+}
+
+legend {
+  padding-top: 25px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Laskuri</h1>
+
+    <!-- Inputs for user to select which numbers to add -->
+    <input type="text" id="number1" placeholder="Numero tänne">
+    <input type="text" id="number2" placeholder="Numero tänne">
+
+    <!-- Button to execute the laske function -->
+    <button id="button" onclick="calculate()">Laskee</button>
+
+    <!-- Anwser will appear here -->
+    <p id="vastaus">Vastaus on: </p>
+
+    <script>
+        //Function to get inputs and add them
+        function calculate() {
+
+            //get the user given inputs
+            let input1 = document.getElementById("number1").value;
+            let input2 = document.getElementById("number2").value;
+            
+            //convert user input to int and add them together
+            let result = parseInt(input1) + parseInt(input2);
+    
+            //send the anwser to the paragraph #vastaus
+            document.getElementById("vastaus").textContent = "Vastaus on: " + result;
+            }
+    </script>
+</body>
+</html>

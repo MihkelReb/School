@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Constructor for the object worker
+        function worker(name, salary){
+            this.name = name;
+            this.salary = salary;
+        }
+        
+        //Adding the objects
+        const worker1 = new worker("Peter", 3300);
+        const worker2 = new worker("Anabelle", 3500);
+        const worker3 = new worker("Juhan", 3600);
+        const worker4 = new worker("Arno", 4200);
+        const worker5 = new worker("Matti", 2500);
+
+        //Creates an array for workers
+        const osasto = [worker1, worker2, worker3, worker4, worker5];
+
+        //Sort the objects in the array by salary
+        osasto.sort((a, b) => a.salary - b.salary);
+        console.log(osasto);
+/*      
+        //Create objects
+        let worker1 = {name:"Peter", salary:3500};
+        let worker2 = {name:"Juhan", salary:3600};
+        let worker3 = {name:"John", salary:2700};
+        let worker4 = {name:"Matti", salary:2500};
+        let worker5 = {name:"Annabel", salary:4200};
+        
+        //Create array from objects
+        const osasto = [worker1, worker2, worker3, worker4, worker5];
+
+        //Sort objects by salary in the array
+        osasto.sort(function(a, b){return a.salary - b.salary});
+
+        console.log(osasto);
+ */
+    </script>
+</body>
+</html>

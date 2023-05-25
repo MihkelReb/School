@@ -1,0 +1,7 @@
+Muuttujien ei pitäisi tarvita kommentteja - ne pitäisi ymmärtää nimestä ja ne eivät voi sisältää "noise words", kaikki muuttujat pitäisi pystyä lausumaan. Funktio pitäisi tekee vain mitää sen nimi sano. Älä toista koodi ja älä jättä koodi kommentiin.
+
+ 
+
+Noise words:
+    The, Info, Data, Variable, Object, Manager
+ne eivät lisä mitään hyödyllistä tietoa ja vain pidentävät nimiä.

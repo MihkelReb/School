@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //Saa merkkijono käyttäjältä
+let tekst = prompt("Kirjuta jotain")
+
+//kuinka pitka on merkijono
+console.log(`Merkkijonossa on kokonaan ${tekst.length} kirjainta`)
+
+//Valitse kirjain mitä lasketaan
+let kirjain = prompt("kirjuta kirjain jotain haluat laskea")
+
+//Kuinka monta a on merkkijonossa
+let kirjaimenValiko = (`Niistä on ${tekst.split(kirjain).length-1} on ${kirjain}-kirjainta`);
+console.log(kirjaimenValiko)
+
+
+//lasketaan merkkijonosta teksti merkkien "a" määrä
+let teksti = prompt("Syötä merkkijono:");
+let merkki = "a"
+let maara = 0
+
+//Käydään koko merkkijono for-silmukka
+for(let i = 0; i < teksti.length; i++){
+  //jos merkki on sama, niin kasvatetaan maara yhdellä
+  if(teksti[i]=="a"){
+    maara = maara + 1
+  }
+}
+console.log("Merkkijonossa on "+maara+" merkkia "+merkki)
+  </script>
+</body>
+</html>

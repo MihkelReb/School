@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <input type="text" id="firstBox" placeholder="Anna lause">
+        <input type="text" id="secondBox" placeholder="Anna yksi merkki" maxlength="1">
+    </form>
+    
+    <button onclick="countLetters()">Lue Määrä</button>
+    
+    <p id="tulosta"></p>
+
+<script>
+    function countLetters() {
+        let lause = document.getElementById("firstBox").value.toLowerCase();
+        let merkki = document.getElementById("secondBox").value.toLowerCase();
+
+        let tulos = lause.split(merkki).length - 1;
+
+        document.querySelector("#tulosta").textContent = `Merkki "${merkki}" esiintyy lausessa ${tulos} kertaa.`;
+    }
+</script>
+
+</body>
+</html>

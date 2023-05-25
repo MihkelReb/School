@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //Prompt the user to select language between eng and fin
+        let languageSelect = prompt("kirjoittaa fin / write eng");
+        //Switch statement selects one of the many code blocks to execute
+        switch (languageSelect) {
+        case "eng":
+            //Prompt the user to write what month it is
+            let monthEN = prompt("Write a month");
+            //Different code blocks for different seasons
+            switch (monthEN) {
+                case "december":
+                case "january":
+                case "february":
+                    console.log("It's winter");
+                    break;
+                case "march":
+                case "april":
+                case "may":
+                    console.log("It's spring");
+                    break;
+                case "june":
+                case "july":
+                case "august":
+                    console.log("It's Summer");
+                    break;
+                case "september":
+                case "october":
+                case "november":
+                    console.log("It's Autumn");
+                    break;
+            }
+        case "fin":
+            let monthFI = prompt("Kirjoitta kuukausi");
+            switch (monthFI) {
+                case "joulukuu":
+                case "tammikuu":
+                case "helmikuu":
+                    console.log("On talvi");
+                    break;
+                case "maaliskuu":
+                case "huhtikuu":
+                case "toukokuu":
+                    console.log("On kevät");
+                    break;
+                case "kesäkuu":
+                case "heinäkuu":
+                case "elokuu":
+                    console.log("On kesä");
+                    break;
+                case "syyskuu":
+                case "lokakuu":
+                case "marraskuu":
+                    console.log("On syksy");
+                    break;
+            }
+} 
+
+    </script>    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+    <body>
+        <div class="banner"></div>                 <!-- Tänne tule banneri -->
+        <h1>Mihkel Rebane Portfolio</h1>                      <!-- Pitäisi olla kuva -->
+        <div class="navlinks">
+            <tr><a href="index.html">Home&nbsp</a></tr>
+            <tr><a href="portfolio.html">Portfolio&nbsp</a></tr>
+            <tr><a href="about.html">About&nbsp</a></tr>
+            <tr><a href="contact.html">Contact&nbsp</a></tr>
+        </div>
+    </body>
+    <form action="/action_page.php">
+        <fieldset max-width="300px">
+         <legend>Contact me</legend>
+
+         <label for="fname">First name:</label>
+         <input type="text" id="fname" name="fname">
+
+         <label for="lname">Last name:</label>
+         <input type="text" id="lname" name="lname"><br><br>
+
+         <label for="email">Email:</label><br>
+         <input type="email" id="email" name="email"><br><br>
+
+         <label for="message">message:</label><br>
+         <textarea class="palaute" name="message"></textarea>
+
+         <input type="submit" value="Submit">
+        </fieldset>
+       </form>
+</html>

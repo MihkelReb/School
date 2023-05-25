@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lemmikki = {
+            tyyppi: "koira",
+            rotu: "koultainen noutaja",
+            ika: 3,
+            elinIka: 13,
+            vari: "keltainen",
+            syntymaAika: new Date("2020-05-23"),
+
+            vuosiaJaljella: function(){return this.elinIka-this.ika},
+
+            vuosiLasku: function() {
+            let tulevaVuosi = addYears(this.syntymaAika, this.elinIka);
+            return tulevaVuosi.getFullYear();
+            }
+        }
+        function addYears(date, years) {
+            date.setFullYear(date.getFullYear() + years);
+            return date;
+        }
+        console.log(`Lemmikilla on jäljellä ${lemmikki.vuosiaJaljella()} vuotta.`);
+        console.log(`Lemmikki kuolee vuonna ${lemmikki.vuosiLasku()}`);
+
+    </script>
+</body>
+</html>

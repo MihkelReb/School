@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input id="textBox" type="text" placeholder="write something"> -->
+    <script>
+    /*  
+        let merkkijono = "Tämä on lause jossa on sanoja"
+        //yksi tapaa
+        let etsittäväMalli = /Lause/
+
+        //tutkitaan onko merkkijonossa mallin mukainen sana
+        //toinen tapaa
+        //let onkoSanaa = /Lause/i.test(merkkijono)
+        console.log("Does `lause` exist in the string?", onkoSanaa)
+    */
+
+        let merkkijono = "Tämä on varsin pitkä merkkij0n0n, ja siinä on eri asioita.";
+        let testResult = /^[a-ö\s,.]+$/ig;
+        console.log("Onko merkkijonossa vain kirjaimia? ", testResult.test(merkkijono));
+
+    </script>
+</body>
+</html>

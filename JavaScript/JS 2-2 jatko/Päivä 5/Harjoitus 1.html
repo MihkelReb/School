@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Whats your name?</h1>
+    <input type="text" id="nimiInput" placeholder="Syötä nimesi">
+    <button onclick="tulostaNimi()">Tulosta nimi</button>
+    <p id="tervehdys"></p>
+    <script>
+        function tulostaNimi() {
+          let nimiInput = document.getElementById("nimiInput");
+          let nimi = nimiInput.value;
+          let tervehdysElementti = document.getElementById("tervehdys");
+          tervehdysElementti.textContent = "Hei, sinun nimesi on: " + nimi;
+        }
+      </script>
+</body>
+</html>

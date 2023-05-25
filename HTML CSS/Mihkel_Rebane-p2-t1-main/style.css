@@ -1,0 +1,22 @@
+body {
+    font-family: 'Times New Roman', Times;
+    fallback: serif;
+    background-color: rgb(255, 180, 180)
+}
+.otsikko1 {
+    text-align: center;
+}
+.otsikko2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 1px;
+}
+
+img {
+    width: 400px;
+    border-radius:10px ;
+}
